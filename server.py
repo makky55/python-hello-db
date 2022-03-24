@@ -11,7 +11,8 @@ DATABASE_REGION = 'ap-northeast-1'
 DATABASE_CERT = 'cert/ap-northeast-1-bundle.pem'
 DATABASE_HOST = os.environ['DATABASE_HOST']
 DATABASE_PORT = os.environ['DATABASE_PORT']
-DATABASE_USER = os.environ['DATABASE_USER']
+# DATABASE_USER = os.environ['DATABASE_USER']
+DATABASE_USER = admin
 DATABASE_NAME = os.environ['DATABASE_NAME']
 
 os.environ['LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN'] = '1'
@@ -30,7 +31,7 @@ try:
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
-        passwd=token,
+        passwd='AWzxcv11##',
         port=DATABASE_PORT,
         database=DATABASE_NAME,
         ssl_ca=DATABASE_CERT
