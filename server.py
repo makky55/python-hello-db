@@ -18,7 +18,7 @@ os.environ['LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN'] = '1'
 
 PORT = int(os.environ.get('PORT'))
 
-rds = boto3.client('rds')
+# rds = boto3.client('rds')
 
 try:
 #    token = rds.generate_db_auth_token(
