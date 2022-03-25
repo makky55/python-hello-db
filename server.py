@@ -40,7 +40,7 @@ try:
         user=DATABASE_USER,
 #        passwd=token,
 #        passwd=DBPASS,
-        passwd='AWzxcv11##'
+        passwd='AWzxcv11##',
         port=DATABASE_PORT,
         database=DATABASE_NAME
 #        ssl_ca=DATABASE_CERT
