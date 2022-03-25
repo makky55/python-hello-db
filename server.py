@@ -35,13 +35,13 @@ try:
         Names='db-pass', 
         WithDecryption=True
     )
-    value = response['Parameter']['Value']
+    VALUE = response['Parameter']['Value']
    
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
 #        passwd=token,
-        passwd=value,
+        passwd=VALUE,
 #        passwd='AWzxcv11##',
 #        passwd=DATABASE_PASS,
         port=DATABASE_PORT,
