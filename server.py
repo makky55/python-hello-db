@@ -7,50 +7,42 @@ import mysql.connector
 
 import os
 
-# DATABASE_REGION = 'ap-northeast-1'
-# DATABASE_CERT = 'ap-northeast-1-bundle.pem'
 DATABASE_HOST = os.environ['DATABASE_HOST']
 DATABASE_PORT = os.environ['DATABASE_PORT']
 DATABASE_USER = os.environ['DATABASE_USER']
 DATABASE_NAME = os.environ['DATABASE_NAME']
-# DATABASE_PASS = os.environ['DATABASE_PASS']
 
 os.environ['LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN'] = '1'
 
 PORT = int(os.environ.get('PORT'))
 
-# rds = boto3.client('rds')
 REGION = 'ap-northeast-1'
 
-
-
-try:
-#    token = rds.generate_db_auth_token(
-#        DBHostname=DATABASE_HOST,
-#        Port=DATABASE_PORT,
-#        DBUsername=DATABASE_USER,
-#        Region=DATABASE_REGION
-#    )
+# Function for get_parameters
+def get_parameters(param_key):
     ssm = boto3.client('ssm', region_name=REGION)
-    response = ssm.get_parameter(
-        Name='db-pass', 
+    response = ssm.get_parameters(
+        Names=[
+            param_key,
+        ],
         WithDecryption=True
     )
-    VALUE = response['Parameter']['Value']
+    return response['Parameters'][0]['Value']    
+
+def all_books(request):
+    param_key = "db-pass"
+    
+    # get parameter value
+    param_value = get_parameters(param_key)
+    
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
-#        passwd=token,
-        passwd=VALUE,
-#        passwd=DATABASE_PASS,
+        passwd=param_value,
         port=DATABASE_PORT,
         database=DATABASE_NAME
-#        ssl_ca=DATABASE_CERT
     )
-except Exception as e:
-    print('Database connection failed due to {}'.format(e))          
-
-def all_books(request):
+    
     mycursor = mydb.cursor()
     mycursor.execute('SELECT name, title, year FROM authors, books WHERE authors.authorId = books.authorId ORDER BY year')
     title = 'Books'
