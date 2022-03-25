@@ -19,6 +19,9 @@ os.environ['LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN'] = '1'
 PORT = int(os.environ.get('PORT'))
 
 # rds = boto3.client('rds')
+REGION = 'ap-northeast-1'
+
+ssm = boto3.client('ssm', region_name=REGION)
 
 try:
 #    token = rds.generate_db_auth_token(
@@ -27,11 +30,16 @@ try:
 #        DBUsername=DATABASE_USER,
 #        Region=DATABASE_REGION
 #    )
+    response = ssm.get_parameters(
+        Names=['db-pass'], WithDecryption=True
+    )
+    pass = response['Parameters'][0]['Value']
+   
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
 #        passwd=token,
-        passwd='AWzxcv11##',
+        passwd=pass,
         port=DATABASE_PORT,
         database=DATABASE_NAME
 #        ssl_ca=DATABASE_CERT
