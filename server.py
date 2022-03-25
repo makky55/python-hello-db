@@ -42,7 +42,6 @@ try:
         user=DATABASE_USER,
 #        passwd=token,
         passwd=VALUE,
-#        passwd='AWzxcv11##',
 #        passwd=DATABASE_PASS,
         port=DATABASE_PORT,
         database=DATABASE_NAME
