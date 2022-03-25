@@ -31,10 +31,10 @@ try:
 #        DBUsername=DATABASE_USER,
 #        Region=DATABASE_REGION
 #    )
-    response = ssm.get_parameters(
-        Names=['db-pass'], WithDecryption=True
-    )
-#    DBPASS = response['Parameters'][0]['Value']
+#    response = ssm.get_parameters(
+#        Names=['db-pass'], WithDecryption=True
+#    )
+    DBPASS = response['Parameters'][0]['Value']
    
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
