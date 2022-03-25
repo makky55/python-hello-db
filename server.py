@@ -34,7 +34,7 @@ try:
     parameter = ssm.get_parameters(
         Names=['db-pass'], WithDecryption=True
     )
-    DBPASS = parameter['Parameters']['Value']
+    DBPASS = parameter['Parameter']['Value']
    
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
