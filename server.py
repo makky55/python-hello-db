@@ -22,12 +22,7 @@ PORT = int(os.environ.get('PORT'))
 # rds = boto3.client('rds')
 REGION = 'ap-northeast-1'
 
-ssm = boto3.client('ssm', region_name=REGION)
-response = ssm.get_parameter(
-    Name='db-pass', 
-    WithDecryption=True
-)
-VALUE = response['Parameter']['Value']
+
 
 try:
 #    token = rds.generate_db_auth_token(
@@ -36,6 +31,12 @@ try:
 #        DBUsername=DATABASE_USER,
 #        Region=DATABASE_REGION
 #    )
+    ssm = boto3.client('ssm', region_name=REGION)
+    response = ssm.get_parameter(
+        Name='db-pass', 
+        WithDecryption=True
+    )
+    VALUE = response['Parameter']['Value']
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
