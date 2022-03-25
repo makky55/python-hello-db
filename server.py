@@ -33,13 +33,13 @@ try:
     response = ssm.get_parameters(
         Names=['db-pass'], WithDecryption=True
     )
-    pass = response['Parameters'][0]['Value']
+    DBPASS = response['Parameters'][0]['Value']
    
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
 #        passwd=token,
-        passwd=pass,
+        passwd=DBPASS,
         port=DATABASE_PORT,
         database=DATABASE_NAME
 #        ssl_ca=DATABASE_CERT
