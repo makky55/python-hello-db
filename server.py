@@ -13,7 +13,7 @@ DATABASE_HOST = os.environ['DATABASE_HOST']
 DATABASE_PORT = os.environ['DATABASE_PORT']
 DATABASE_USER = os.environ['DATABASE_USER']
 DATABASE_NAME = os.environ['DATABASE_NAME']
-DATABASE_PASS = os.environ['DATABASE_PASS']
+# DATABASE_PASS = os.environ['DATABASE_PASS']
 
 os.environ['LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN'] = '1'
 
@@ -43,7 +43,7 @@ try:
 #        passwd=token,
         passwd=value,
 #        passwd='AWzxcv11##',
-        passwd=DATABASE_PASS,
+#        passwd=DATABASE_PASS,
         port=DATABASE_PORT,
         database=DATABASE_NAME
 #        ssl_ca=DATABASE_CERT
