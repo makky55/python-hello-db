@@ -24,7 +24,7 @@ REGION = 'ap-northeast-1'
 
 ssm = boto3.client('ssm', region_name=REGION)
 response = ssm.get_parameter(
-    Names='db-pass', 
+    Name='db-pass', 
     WithDecryption=True
 )
 VALUE = response['Parameter']['Value']
