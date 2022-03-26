@@ -12,8 +12,6 @@ DATABASE_PORT = os.environ['DATABASE_PORT']
 DATABASE_USER = os.environ['DATABASE_USER']
 DATABASE_NAME = os.environ['DATABASE_NAME']
 
-os.environ['LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN'] = '1'
-
 PORT = int(os.environ.get('PORT'))
 
 REGION = 'ap-northeast-1'
