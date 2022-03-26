@@ -25,7 +25,7 @@ def get_parameters(param_key):
         Names=[
             param_key,
         ],
-        WithDecryption=False
+        WithDecryption=True
     )
     return response['Parameters'][0]['Value']    
 
