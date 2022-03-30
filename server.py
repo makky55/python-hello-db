@@ -12,7 +12,7 @@ DATABASE_PORT = os.environ['DATABASE_PORT']
 DATABASE_USER = os.environ['DATABASE_USER']
 DATABASE_NAME = os.environ['DATABASE_NAME']
 # DATABASE_PASS = os.environ['DATABASE_PASS']
-DATABASE_PASS = '/Aurora/bookcase/password'
+DATABASE_PASS = db-pass
 
 PORT = int(os.environ.get('PORT'))
 
