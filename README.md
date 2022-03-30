@@ -23,12 +23,12 @@ App Runner + VPC のサンプルコード。
 	```
 * 管理者ユーザーのパスワードを入力してログインします。次に、IAM 認証を使用するように設定された新しいユーザー (bookuser) を作成します。
 	```
-	CREATE USER bookuser IDENTIFIED WITH AWSAuthenticationPlugin AS 'RDS'; 
+	create user 'user01'@'%' identified by '<パスワードを指定してください>';
 	```
 * bookcase データベースを作成し、bookuser へ bookcase データベースにクエリを実行する権限を付与します。
 	```
 	CREATE DATABASE bookcase;
-	GRANT SELECT ON bookcase.* TO 'bookuser'@'%';
+	GRANT SELECT ON bookcase.* TO 'user01'@'%';
 	```
 * authors テーブルと books テーブルを作成します。
 	```
