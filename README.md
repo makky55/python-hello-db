@@ -38,6 +38,9 @@ App Runner + VPC のサンプルコード。
 	```
 * authors テーブルと books テーブルを作成します。
 	```
+	USE bookcase;
+	```
+	```
 	CREATE TABLE authors (
 	  authorId INT,
 	  name varchar(255)
