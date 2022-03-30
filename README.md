@@ -69,7 +69,7 @@ App Runner + VPC のサンプルコード。
 	<img src="https://user-images.githubusercontent.com/23633944/160746102-9d8be14c-06ea-431b-9285-9f78605f1730.png" width="600px">
 * App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
 * エンドポイントが作成済みになったことを確認します。
-	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="00px">
+	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="800px">
 
 ## 3. パラメータの作成
 * Aurora のパスワード用をパラメータストアを作成します。以下の設定をして、パラメータを作成 をクリックします。
