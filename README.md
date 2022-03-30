@@ -118,5 +118,15 @@ App Runner + VPC のサンプルコード。
 	<img src="https://user-images.githubusercontent.com/23633944/160285978-7015fb8f-ffc7-4843-8ecf-333b7261e0b0.png" width="600px">
 * Authorize AWS Connector for GitHub をクリックします。
 	<img src="https://user-images.githubusercontent.com/23633944/160287283-ebcca49a-e65a-4de3-94f6-f11bb0db108d.png" width="600px">
-* 接続名に適切な名前を入力して次へをクリックします。
-	<img src="https://user-images.githubusercontent.com/23633944/160287407-d2fd3d1f-2e5c-400f-b0b8-9f0a94c0271e.png" width="600px">
+* 接続名に名前を入力して 別のアプリケーションをインストールする をクリックします。
+	<img src="https://user-images.githubusercontent.com/23633944/160808097-a66f2ae8-eec7-4724-93d9-9fb0000af250.png" width="600px">
+* Install をクリックします。
+	<img src="https://user-images.githubusercontent.com/23633944/160808379-b7bdbd24-8762-48d1-b2ab-1b7618f5baa4.png" width="600px">
+* 以下のようにエラーが表示されたら、キャンセルをクリックしてください。
+ 	<img src="ttps://user-images.githubusercontent.com/23633944/160808724-5bc5e9a9-1a76-4dd2-8003-ae5d05b1bc03.png" width="600px">
+* 再度新規追加をクリックしてください。
+	<img src="https://user-images.githubusercontent.com/23633944/160281498-9b075c39-49f4-4b5a-b817-d977b8e032a3.png" width="600px">
+![image](https://user-images.githubusercontent.com/23633944/160809066-8a5da68d-7628-4788-b668-ba8b0abc3f34.png)
+
+
+
