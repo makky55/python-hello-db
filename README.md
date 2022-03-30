@@ -151,12 +151,13 @@ App Runner + VPC のサンプルコード。
 	* サービス名: bookcase
 	* 仮想CPUとメモリ: 1vCPU 2GB
 	* 環境変数
-		* DATABASE_HOST: データベースインスタンスのエンドポイント名 (例: database-1-instance-1.cfrgnexxi2cn.ap-northeast-1.rds.amazonaws.com)
+		* DATABASE_HOST: データベースインスタンスのエンドポイント名
 		* DATABASE_NAME: bookcase
+		* DATABASE_PASS: DB_PASS
 		* DATABASE_PORT: 3306
-		* DATABASE_USER: bookuser
-	<img src="https://user-images.githubusercontent.com/23633944/160289189-1879a611-d04c-4e28-8c96-5655262ccb88.png" width="600px">
-	
+		* DATABASE_USER: user01
+	<img src="https://user-images.githubusercontent.com/23633944/160813643-8f8961cf-f15c-428d-b62e-5b30de22e6dd.png" width="600px">
+
 * 前の手順で作成したIAM ロールを選択します。
 	
 	<img src="https://user-images.githubusercontent.com/23633944/160289242-e81f7797-3356-4a43-81b9-b87bde2944e1.png" width="600px">
