@@ -155,7 +155,7 @@ App Runner + VPC のサンプルコード。
 
 * リポジトリとブランチを選択して、デプロイトリガーに手動を選択し、次へをクリックします。
 
-	<img src="https://user-images.githubusercontent.com/23633944/160811412-7f052512-878a-4587-b4db-b495ded824f8.png" width="600px">
+	<img src="https://user-images.githubusercontent.com/23633944/160827198-d24e6d11-2a08-465c-ae3b-48de6613232e.png" width="600px">
 
 * ランタイム、構築コマンド、開始コマンド、ポートを入力します。
 	* ランタイム: python3		
