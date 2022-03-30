@@ -11,8 +11,7 @@ DATABASE_HOST = os.environ['DATABASE_HOST']
 DATABASE_PORT = os.environ['DATABASE_PORT']
 DATABASE_USER = os.environ['DATABASE_USER']
 DATABASE_NAME = os.environ['DATABASE_NAME']
-# DATABASE_PASS = os.environ['DATABASE_PASS']
-DATABASE_PASS = 'db-pass'
+DATABASE_PASS = os.environ['DATABASE_PASS']
 
 PORT = int(os.environ.get('PORT'))
 
