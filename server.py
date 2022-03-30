@@ -28,7 +28,7 @@ def get_parameters(param_key):
     return response['Parameters'][0]['Value']    
 
 def all_books(request):
-    param_key = 'db-pass'
+    param_key = '/Aurora/bookcase/password'
     
     # get parameter value
     param_value = get_parameters(param_key)
