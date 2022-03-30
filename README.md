@@ -158,9 +158,9 @@ App Runner + VPC のサンプルコード。
 		* DATABASE_USER: user01
 	<img src="https://user-images.githubusercontent.com/23633944/160813643-8f8961cf-f15c-428d-b62e-5b30de22e6dd.png" width="600px">
 
-* 前の手順で作成したIAM ロールを選択します。
+* 作成したIAM ロールを選択します。
 	
-	<img src="https://user-images.githubusercontent.com/23633944/160289242-e81f7797-3356-4a43-81b9-b87bde2944e1.png" width="600px">
+	<img src="https://user-images.githubusercontent.com/23633944/160814177-b9c80c4f-309d-4b25-b0c7-a86640d71cc6.png" width="600px">
 
 * カスタム VPC を選択して新規追加をクリックして VPC コネクタを作成します。
 	
@@ -186,12 +186,3 @@ App Runner + VPC のサンプルコード。
 * 以下のように表示されたら成功です。
 	
 	<img src="https://user-images.githubusercontent.com/23633944/160290758-4a5648d0-a380-47a7-8c90-af3d370bd504.png" width="600px">
-
-
-
-
-
-
-
-
-
