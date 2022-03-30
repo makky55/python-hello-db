@@ -75,7 +75,7 @@ App Runner + VPC のサンプルコード。
 * Aurora のパスワード用をパラメータストアを作成します。以下の設定をして、パラメータを作成 をクリックします。
 	* 名前: DB_PASS
 	* タイプ: 安全な文字列
-	* 値: <Aurora のパスワード>
+	* 値: <Aurora の user01 ユーザ のパスワード>
 	<img src="https://user-images.githubusercontent.com/23633944/160814818-0db9ed58-507b-45e2-a976-852905ae3183.png" width="600px">
 	
 ## 4. App Runner タスク 用 の IAM ロールの作成
