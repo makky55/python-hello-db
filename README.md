@@ -63,6 +63,7 @@ App Runner + VPC のサンプルコード。
 	<img src="https://user-images.githubusercontent.com/23633944/160746102-9d8be14c-06ea-431b-9285-9f78605f1730.png" width="600px">
 * App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
 * エンドポイントが作成済みになったことを確認します。
-	<img src="https://user-images.githubusercontent.com/23633944/160279621-f5931bb6-494c-404e-afe6-3776bbe0d5ee.png" width="600px">
+	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="600px">
+
 ## 3. App Runner タスク 用 の IAM ロールの作成
 * IAMロールには、以下のポリシーを付与します。<ACCOUNT> と <DB_RESOURCE_ID> は環境に合わせて変更してください。
