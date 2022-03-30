@@ -138,7 +138,7 @@ App Runner + VPC のサンプルコード。
 	<img src="https://user-images.githubusercontent.com/23633944/160808379-b7bdbd24-8762-48d1-b2ab-1b7618f5baa4.png" width="600px">
 * 以下のようにエラーが表示されたら、キャンセルをクリックしてください。
 
- 	<img src="https://user-images.githubusercontent.com/23633944/160810141-99b0bb2e-cba2-49a5-85f2-1c8f68debac0.png" width="600px">
+ 	<img src="https://user-images.githubusercontent.com/23633944/160822058-ea0a1e90-eda0-47e3-9e96-f8adfbc70c69.png" width="600px">
 
 * 再度新規追加をクリックしてください。
 
