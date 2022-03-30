@@ -5,6 +5,7 @@ App Runner + VPC のサンプルコード。
 参考blog から以下を変更しています。
 * DB認証をIAMデータベース認証からパスワード認証に変更。
 * Auroraのパスワードはパラメータストアに保管し、App Runner からパラメータストアへのアクセスは VPC エンドポイントを利用。
+* Aurora は Serverless ではなくProvisionedのクラスタを利用。
 
 # 構成図
 
