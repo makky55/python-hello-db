@@ -140,6 +140,56 @@ App Runner + VPC のサンプルコード。
 
 	<img src="https://user-images.githubusercontent.com/23633944/160811412-7f052512-878a-4587-b4db-b495ded824f8.png" width="600px">
 
+* ランタイム、構築コマンド、開始コマンド、ポートを入力します。
+	* ランタイム: python3		
+	* 構築コマンド: pip install -r requirements.txt
+	* 開始コマンド: python server.py
+	* ポート: 8080
+	<img src="https://user-images.githubusercontent.com/23633944/160288620-ba0e8d09-af4f-4719-8190-8d3fcf294218.png" width="600px">
+
+* サービス名、仮想CPUとメモリ、環境変数を入力します。
+	* サービス名: bookcase
+	* 仮想CPUとメモリ: 1vCPU 2GB
+	* 環境変数
+		* DATABASE_HOST: データベースインスタンスのエンドポイント名 (例: database-1-instance-1.cfrgnexxi2cn.ap-northeast-1.rds.amazonaws.com)
+		* DATABASE_NAME: bookcase
+		* DATABASE_PORT: 3306
+		* DATABASE_USER: bookuser
+	<img src="https://user-images.githubusercontent.com/23633944/160289189-1879a611-d04c-4e28-8c96-5655262ccb88.png" width="600px">
+	
+* 前の手順で作成したIAM ロールを選択します。
+	
+	<img src="https://user-images.githubusercontent.com/23633944/160289242-e81f7797-3356-4a43-81b9-b87bde2944e1.png" width="600px">
+
+* カスタム VPC を選択して新規追加をクリックして VPC コネクタを作成します。
+	
+	<img src="https://user-images.githubusercontent.com/23633944/160289402-2f017b80-1c57-4972-be11-4edf14fe5ee3.png" width="600px">
+
+* VPC コネクタの設定をします。
+	* VPC コネクタ名: my-vpc
+	* VPC: Aurora MySQL のVPCを選択
+	* サブネット: プライベートサブネットを選択
+	* セキュリティグループ:  App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
+	
+	<img src="https://user-images.githubusercontent.com/23633944/160289840-5af3d414-369f-4c64-b67f-7367518163af.png" width="600px">
+
+* 次へをクリックします。
+	
+* 作成とデプロイをクリックします。
+
+## 5. デプロイの確認
+* Create Service が成功しましたと表示されます。デフォルトドメインをクリックします。
+
+	<img src="https://user-images.githubusercontent.com/23633944/160290704-616b952a-edef-412b-b14d-9b2bfc11771b.png" width="600px">
+
+* 以下のように表示されたら成功です。
+	
+	<img src="https://user-images.githubusercontent.com/23633944/160290758-4a5648d0-a380-47a7-8c90-af3d370bd504.png" width="600px">
+
+
+
+
+
 
 
 
