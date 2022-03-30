@@ -11,28 +11,28 @@ DATABASE_HOST = os.environ['DATABASE_HOST']
 DATABASE_PORT = os.environ['DATABASE_PORT']
 DATABASE_USER = os.environ['DATABASE_USER']
 DATABASE_NAME = os.environ['DATABASE_NAME']
+DATABASE_PASS = os.environ['DATABASE_PASS']
 
 PORT = int(os.environ.get('PORT'))
 
 REGION = 'ap-northeast-1'
 
 # Function for get_parameters
-def get_parameters(param_key):
+def get_parameters(PARAM_KEY):
     ssm = boto3.client('ssm', region_name=REGION)
     response = ssm.get_parameters(
         Names=[
-            param_key,
+            PARAM_KEY,
         ],
         WithDecryption=True
     )
     return response['Parameters'][0]['Value']    
 
 def all_books(request):
-    param_key = '/Aurora/bookcase/password'
-    
     # get parameter value
-    param_value = get_parameters(param_key)
+    param_value = get_parameters(DATABASE_PASS)
     
+    # Connect Aurora Database
     mydb =  mysql.connector.connect(
         host=DATABASE_HOST,
         user=DATABASE_USER,
