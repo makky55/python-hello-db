@@ -52,3 +52,15 @@ App Runner + VPC のサンプルコード。
 	INSERT INTO books VALUES (2, 1, "Foundation and Empire", 1952);
 	INSERT INTO books VALUES (3, 1, "Second Foundation", 1953);
 	INSERT INTO books VALUES (4, 2, "Stranger in a Strange Land", 1961);
+## 2. Amazon RDS API Endpoint 用 の VPC エンドポイントの作成
+参考blogには無い手順ですが、Amazon RDS API Endpoint を使って SSM の API Endpoint に接続します。以下主な注意点です。
+
+* 名前タグを入力し、サービスカテゴリに AWS のサービスを選択します。サービスで "com.amazonaws.ap-northeast-1.ssm"を選択します。
+	<img src="https://user-images.githubusercontent.com/23633944/160745925-6ad05ea7-6d9c-4cbc-a14e-c842f8103fac.png" width="600px">
+* Aurora MySQL と同じVPC / プライベートサブネットを選択します。
+	<img src="https://user-images.githubusercontent.com/23633944/160746102-9d8be14c-06ea-431b-9285-9f78605f1730.png" width="600px">
+* App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
+* エンドポイントが作成済みになったことを確認します。
+	<img src="https://user-images.githubusercontent.com/23633944/160279621-f5931bb6-494c-404e-afe6-3776bbe0d5ee.png" width="600px">
+## 3. App Runner タスク 用 の IAM ロールの作成
+* IAMロールには、以下のポリシーを付与します。<ACCOUNT> と <DB_RESOURCE_ID> は環境に合わせて変更してください。
