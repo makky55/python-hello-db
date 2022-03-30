@@ -94,3 +94,19 @@ App Runner + VPC のサンプルコード。
 	    ]
 	}
 	```
+* IAMロールの信頼ポリシーには、以下の構成を設定します。 
+	```
+	{
+	  "Version": "2012-10-17",
+	  "Statement": [
+	    {
+	      "Effect": "Allow",
+	      "Principal": {
+	        "Service": "tasks.apprunner.amazonaws.com"
+	      },
+	      "Action": "sts:AssumeRole"
+	    }
+	  ]
+	}
+	```
+## 4. App Runner のサービスの作成
