@@ -136,9 +136,10 @@ App Runner + VPC のサンプルコード。
 	<img src="https://user-images.githubusercontent.com/23633944/160287283-ebcca49a-e65a-4de3-94f6-f11bb0db108d.png" width="600px">
 * 接続名に名前を入力して 別のアプリケーションをインストールする をクリックします。
 	<img src="https://user-images.githubusercontent.com/23633944/160808097-a66f2ae8-eec7-4724-93d9-9fb0000af250.png" width="600px">
-* Install をクリックします。
+* リポジトリ に python-hello-db を選択して、Install をクリックします。
 
-	<img src="https://user-images.githubusercontent.com/23633944/160808379-b7bdbd24-8762-48d1-b2ab-1b7618f5baa4.png" width="600px">
+	<img src="https://user-images.githubusercontent.com/23633944/160826100-26ce9379-e39e-4e4c-b338-b330abf586e2.png" width="600px">
+	
 * 以下のようにエラーが表示されたら、キャンセルをクリックしてください。
 
  	<img src="https://user-images.githubusercontent.com/23633944/160822058-ea0a1e90-eda0-47e3-9e96-f8adfbc70c69.png" width="600px">
