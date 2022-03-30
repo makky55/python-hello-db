@@ -183,7 +183,7 @@ App Runner + VPC のサンプルコード。
 	
 	<img src="https://user-images.githubusercontent.com/23633944/160289402-2f017b80-1c57-4972-be11-4edf14fe5ee3.png" width="600px">
 
-* VPC コネクタの設定をします。
+* VPC コネクタの設定をして、追加をクリックします。
 	* VPC コネクタ名: my-vpc
 	* VPC: Aurora MySQL のVPCを選択
 	* サブネット: プライベートサブネットを選択
