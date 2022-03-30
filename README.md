@@ -168,7 +168,7 @@ App Runner + VPC のサンプルコード。
 	* サービス名: bookcase
 	* 仮想CPUとメモリ: 1vCPU 2GB
 	* 環境変数
-		* DATABASE_HOST: データベースインスタンスのエンドポイント名
+		* DATABASE_HOST: Aurora インスタンスのエンドポイント名
 		* DATABASE_NAME: bookcase
 		* DATABASE_PASS: DB_PASS
 		* DATABASE_PORT: 3306
