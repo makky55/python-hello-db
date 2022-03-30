@@ -1,6 +1,10 @@
 # python-hello-db
 App Runner + VPC のサンプルコード。
-参考: https://aws.amazon.com/jp/blogs/news/deep-dive-on-aws-app-runner-vpc-networking/
+参考blog: https://aws.amazon.com/jp/blogs/news/deep-dive-on-aws-app-runner-vpc-networking/
+
+参考blog から以下を変更しています。
+* DB認証をIAMデータベース認証からパスワード認証に変更。
+* Auroraのパスワードはパラメータストアに保管し、App Runner からパラメータストアへのアクセスは VPC エンドポイントを利用。
 
 # 構成図
 
@@ -66,7 +70,14 @@ App Runner + VPC のサンプルコード。
 * エンドポイントが作成済みになったことを確認します。
 	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="600px">
 
-## 3. App Runner タスク 用 の IAM ロールの作成
+## 3. パラメータの作成
+* Aurora のパスワード用をパラメータストアを作成します。以下の設定をして、パラメータを作成 をクリックします。
+	* 名前: DB_PASS
+	* タイプ: 安全な文字列
+	* 値: <Aurora のパスワード>
+	<img src="https://user-images.githubusercontent.com/23633944/160814818-0db9ed58-507b-45e2-a976-852905ae3183.png" width="600px">
+	
+## 4. App Runner タスク 用 の IAM ロールの作成
 * Get-Parameters という名前の IAM ロールを作成します。このロールには以下のポリシーを付与します。
 	```
 	{
@@ -109,7 +120,8 @@ App Runner + VPC のサンプルコード。
 	  ]
 	}
 	```
-## 4. App Runner のサービスの作成
+
+## 5. App Runner のサービスの作成
 * App Runner の画面で サービスの作成 を選択します。
 	<img src="https://user-images.githubusercontent.com/23633944/160281340-71a28b00-f716-44b7-bf86-1c0f1fd261f4.png" width="600px">
 * ソースコードレポジトリ を選択して、新規追加をクリックします。
