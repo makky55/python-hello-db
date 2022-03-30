@@ -110,3 +110,13 @@ App Runner + VPC のサンプルコード。
 	}
 	```
 ## 4. App Runner のサービスの作成
+* App Runner の画面で サービスの作成 を選択します。
+	<img src="https://user-images.githubusercontent.com/23633944/160281340-71a28b00-f716-44b7-bf86-1c0f1fd261f4.png" width="600px">
+* ソースコードレポジトリ を選択して、新規追加をクリックします。
+	<img src="https://user-images.githubusercontent.com/23633944/160281498-9b075c39-49f4-4b5a-b817-d977b8e032a3.png" width="600px">
+* ユーザ名(またはメールアドレス)とパスワードを入力して GitHub にログインします。
+	<img src="https://user-images.githubusercontent.com/23633944/160285978-7015fb8f-ffc7-4843-8ecf-333b7261e0b0.png" width="600px">
+* Authorize AWS Connector for GitHub をクリックします。
+	<img src="https://user-images.githubusercontent.com/23633944/160287283-ebcca49a-e65a-4de3-94f6-f11bb0db108d.png" width="600px">
+* 接続名に適切な名前を入力して次へをクリックします。
+	<img src="https://user-images.githubusercontent.com/23633944/160287407-d2fd3d1f-2e5c-400f-b0b8-9f0a94c0271e.png" width="600px">
