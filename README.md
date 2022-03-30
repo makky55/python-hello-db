@@ -8,7 +8,7 @@ App Runner + VPC のサンプルコード。
 
 # 構成図
 
-<img src="https://user-images.githubusercontent.com/23633944/160276162-7c995533-5554-475e-8b6b-8e6082695268.png" width="600px">
+<img src="https://user-images.githubusercontent.com/23633944/160276162-7c995533-5554-475e-8b6b-8e6082695268.png" width="00px">
 
 # 手順
 ## 0. リポジトリのコピー
