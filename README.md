@@ -29,7 +29,7 @@ App Runner + VPC のサンプルコード。
 	```
 * 管理者ユーザーのパスワードを入力してログインします。次に、IAM 認証を使用するように設定された新しいユーザー (user01) を作成します。
 	```
-	create user 'user01'@'%' identified by '<パスワードを指定してください>';
+	create user 'user01'@'%' identified by '<パスワード>';
 	```
 * bookcase データベースを作成し、user01 へ bookcase データベースにクエリを実行する権限を付与します。
 	```
