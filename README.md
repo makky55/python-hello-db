@@ -67,4 +67,30 @@ App Runner + VPC のサンプルコード。
 	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="600px">
 
 ## 3. App Runner タスク 用 の IAM ロールの作成
-* IAMロールには、以下のポリシーを付与します。<ACCOUNT> と <DB_RESOURCE_ID> は環境に合わせて変更してください。
+* Get-Parameters という名前の IAM ロールを作成します。このロールには以下のポリシーを付与します。
+	```
+	{
+	    "Version": "2012-10-17",
+	    "Statement": [
+ 	       {
+	            "Sid": "VisualEditor0",
+	            "Effect": "Allow",
+	            "Action": "ssm:GetParameters",
+	            "Resource": "*"
+	        }
+	    ]
+	}
+	```
+	```
+	{
+	    "Version": "2012-10-17",
+	    "Statement": [
+	        {
+	            "Sid": "VisualEditor0",
+	            "Effect": "Allow",
+	            "Action": "kms:Decrypt",
+	            "Resource": "*"
+	        }
+	    ]
+	}
+	```
