@@ -56,7 +56,9 @@ App Runner + VPC のサンプルコード。
 参考blogには無い手順ですが、Amazon RDS API Endpoint を使って SSM の API Endpoint に接続します。以下主な注意点です。
 
 * 名前タグを入力し、サービスカテゴリに AWS のサービスを選択します。サービスで "com.amazonaws.ap-northeast-1.ssm"を選択します。
+	
 	<img src="https://user-images.githubusercontent.com/23633944/160745925-6ad05ea7-6d9c-4cbc-a14e-c842f8103fac.png" width="600px">
+	
 * Aurora MySQL と同じVPC / プライベートサブネットを選択します。
 	<img src="https://user-images.githubusercontent.com/23633944/160746102-9d8be14c-06ea-431b-9285-9f78605f1730.png" width="600px">
 * App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
