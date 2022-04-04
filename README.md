@@ -13,7 +13,9 @@ App Runner + VPC のサンプルコード。
 
 # 手順
 ## 0. リポジトリのコピー
-このリポジトリを自分のアカウントのリポジトリにコピーしてください。
+このリポジトリを自分のアカウントのリポジトリにコピーしてください。インポートの方法は以下を参考にしてください。
+https://docs.github.com/ja/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer
+
 
 ## 1. Amazon Aurora MySQL の準備 
 参考blogでは、Aurora Serverless で IAMデータベース認証を利用すると書いてあるが、Aurora Serverless では IAMデータベース認証をサポートしていないので、Provisioned のAurora MySQLを作成します。
