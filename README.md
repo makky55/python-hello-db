@@ -110,8 +110,10 @@ App Runner + VPC のサンプルコード。
 	
 	<img src="https://user-images.githubusercontent.com/23633944/160745925-6ad05ea7-6d9c-4cbc-a14e-c842f8103fac.png" width="600px">
 	
-* Aurora MySQL と同じVPC / プライベートサブネットを選択します。
-	<img src="https://user-images.githubusercontent.com/23633944/160746102-9d8be14c-06ea-431b-9285-9f78605f1730.png" width="600px">
+* Aurora MySQL と同じVPC(apprunner-testのプライベートサブネットを選択します。
+
+	<img src="https://user-images.githubusercontent.com/23633944/161481427-49819168-7f60-44c3-bd2a-3efbeabd1254.png" width="600px">
+	
 * App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
 * エンドポイントが作成済みになったことを確認します。
 	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="800px">
