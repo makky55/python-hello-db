@@ -61,7 +61,7 @@ App Runner + VPC のサンプルコード。
 	INSERT INTO books VALUES (2, 1, "Foundation and Empire", 1952);
 	INSERT INTO books VALUES (3, 1, "Second Foundation", 1953);
 	INSERT INTO books VALUES (4, 2, "Stranger in a Strange Land", 1961);
-## 2. Amazon RDS API Endpoint 用 の VPC エンドポイントの作成
+## 2. Systems Manager (Parameter Store) 用 の VPC エンドポイントの作成
 参考blogには無い手順ですが、Amazon RDS API Endpoint を使って SSM の API Endpoint に接続します。以下主な注意点です。
 
 * 名前タグを入力し、サービスカテゴリに AWS のサービスを選択します。サービスで "com.amazonaws.ap-northeast-1.ssm"を選択します。
