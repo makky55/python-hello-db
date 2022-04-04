@@ -118,6 +118,7 @@ App Runner + VPC のサンプルコード。
 
 	<img src="https://user-images.githubusercontent.com/23633944/161482923-530da903-abf5-4b4c-bef2-47d20233863b.png" width="600px">
 
+* エンドポイントを作成をクリックします。
 * エンドポイントが作成済みになったことを確認します。
 	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="800px">
 
