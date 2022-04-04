@@ -66,20 +66,20 @@ App Runner + VPC のサンプルコード。
 * Get-Parameters という名前の IAM ロールを作成します。このロールには以下のポリシーを付与します。
 	```
 	{
-    	  "Version": "2012-10-17",
-    	  "Statement": [
+	  "Version": "2012-10-17",
+	  "Statement": [
+	    {
+	      "Sid": "SSMGetparameters",
+	      "Effect": "Allow",
+	      "Action": "ssm:GetParameters",
+	      "Resource": "*"
+	    },
             {
-              "Sid": "SSMGetparameters",
-              "Effect": "Allow",
-              "Action": "ssm:GetParameters",
-              "Resource": "*"
-            },
-            {
-              "Sid": "KMSDecrypt",
-              "Effect": "Allow",
-              "Action": "kms:Decrypt",
-              "Resource": "*"
-            }
+	      "Sid": "KMSDecrypt",
+	      "Effect": "Allow",
+	      "Action": "kms:Decrypt",
+	      "Resource": "*"
+	    }
     	  ]
 	}
 	```
