@@ -80,7 +80,7 @@ App Runner + VPC のサンプルコード。
 	      "Action": "kms:Decrypt",
 	      "Resource": "*"
 	    }
-    	  ]
+	  ]
 	}
 	```
 * IAMロールの信頼ポリシーには、以下の構成を設定します。 
