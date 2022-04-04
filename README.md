@@ -100,7 +100,7 @@ App Runner + VPC のサンプルコード。
 	```
 
 ## 3. Systems Manager (Parameter Store) 用 の VPC エンドポイントの作成
-参考blogには無い手順ですが、Amazon RDS API Endpoint を使って SSM の API Endpoint に接続します。以下主な注意点です。
+参考blogには無い手順ですが、Systems Manager の VPC Endpoint Systems Manager 経由で Parameter Store に接続します。以下主な注意点です。
 
 * 名前タグを入力し、サービスカテゴリに AWS のサービスを選択します。サービスで "com.amazonaws.ap-northeast-1.ssm"を選択します。
 	
