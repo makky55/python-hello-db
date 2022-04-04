@@ -190,9 +190,9 @@ App Runner + VPC のサンプルコード。
 
 * VPC コネクタの設定をして、追加をクリックします。
 	* VPC コネクタ名: my-vpc
-	* VPC: Aurora MySQL のVPCを選択
+	* VPC: Aurora MySQL のVPCを選択。今回は 10.0.0.0/16 を選択します。
 	* サブネット: プライベートサブネットを選択
-	* セキュリティグループ:  App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
+	* セキュリティグループ:  App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。今回は default を選択します。
 	
 	<img src="https://user-images.githubusercontent.com/23633944/160289840-5af3d414-369f-4c64-b67f-7367518163af.png" width="600px">
 
