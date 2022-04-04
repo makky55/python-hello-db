@@ -203,9 +203,9 @@ https://docs.github.com/ja/get-started/importing-your-projects-to-github/importi
 * 作成とデプロイをクリックします。
 
 ## 5. デプロイの確認
-* Create Service が成功しましたと表示されます。デフォルトドメインをクリックします。
+* イベントログに Service status is set to RUNNING と表示され、 左上に Create Service が成功しました と表示されたらデプロイが終了です。デフォルトドメインをクリックします。
 
-	<img src="https://user-images.githubusercontent.com/23633944/160290704-616b952a-edef-412b-b14d-9b2bfc11771b.png" width="600px">
+	<img src="https://user-images.githubusercontent.com/23633944/161571736-a49baafa-9a2f-472b-bfd2-d28051b900e8.png" width="600px">
 
 * 以下のように表示されたら成功です。
 	
