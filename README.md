@@ -114,7 +114,10 @@ App Runner + VPC のサンプルコード。
 
 	<img src="https://user-images.githubusercontent.com/23633944/161481427-49819168-7f60-44c3-bd2a-3efbeabd1254.png" width="600px">
 	
-* App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。
+* App Runner のタスク からの接続を拒否しないセキュリティグループを選択します。ここでは default を選択します。
+
+	<img src="https://user-images.githubusercontent.com/23633944/161482923-530da903-abf5-4b4c-bef2-47d20233863b.png" width="600px">
+
 * エンドポイントが作成済みになったことを確認します。
 	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="800px">
 
