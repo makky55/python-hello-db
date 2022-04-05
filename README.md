@@ -112,7 +112,7 @@ https://docs.github.com/ja/get-started/importing-your-projects-to-github/importi
 	
 	<img src="https://user-images.githubusercontent.com/23633944/160745925-6ad05ea7-6d9c-4cbc-a14e-c842f8103fac.png" width="600px">
 	
-* Aurora MySQL と同じVPC(apprunner-testのプライベートサブネットを選択します。
+* Aurora MySQL と同じVPC の apprunner-testのプライベートサブネットを選択します。
 
 	<img src="https://user-images.githubusercontent.com/23633944/161481427-49819168-7f60-44c3-bd2a-3efbeabd1254.png" width="600px">
 	
