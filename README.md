@@ -124,7 +124,7 @@ https://docs.github.com/ja/get-started/importing-your-projects-to-github/importi
 * エンドポイントが作成済みになったことを確認します。
 	<img src="https://user-images.githubusercontent.com/23633944/160746639-5ca6f202-173a-41d8-8749-ace0a124f901.png" width="800px">
 
-## 4. パラメータの作成
+## 4. Parameter Store の作成
 * Aurora のパスワード用をパラメータストアを作成します。以下の設定をして、パラメータを作成 をクリックします。
 	* 名前: DB_PASS
 	* タイプ: 安全な文字列
